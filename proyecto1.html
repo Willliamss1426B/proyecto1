@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="menu_side">
+            <h1>Lista de Reproduccion</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Lista de Reproduccion</h4>
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Ultima de Reproduccion</h4>
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Recomendado</h4>
+            </div>
+        <div class="menu_song">
+            <li class="songItem">
+                <span>01</span>
+                <img src="./img/1.png" alt="">
+                <h5>La Sin Sentimientos<br>
+                    <div class="subtitle">Alex Pance, BIAKO</div>
+                </h5>
+                <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+            </li>
+            <li class="songItem">
+                <span>02</span>
+                <img src="./img/2.png" alt="">
+                <h5>
+                    Por que Sera
+                    <div class="subtitle">Grupo Frontera, Maluma</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+            </li>
+            <li class="songItem">
+                <span>03</span>
+                <img src="./img/3.png" alt="">
+                <h5>
+                    Ojitos Rojos
+                    <div class="subtitle">Grupo Frontera, Ke Personajes</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+            </li>
+            <li class="songItem">
+                <span>04</span>
+                <img src="./img/4.png" alt="">
+                <h5>
+                    Ya No vuelvas
+                    <div class="subtitle">Luck Ra, La K'onga, Ke Personajes</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+            </li>
+            <li class="songItem">
+                <span>05</span>
+                <img src="./img/5.png" alt="">
+                <h5>
+                    Mercho
+                    <div class="subtitle">Lil Cake Migrantes, Nico Voldi</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+            </li>
+            <li class="songItem">
+                <span>06</span>
+                <img src="./img/6.png" alt="">
+                <h5>
+                    La Morocha
+                    <div class="subtitle">Luck Ra, BM</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+            </li>
+            <li class="songItem">
+                <span>07</span>
+                <img src="./img/7.png" alt="">
+                <h5>
+                    Luck RA Mission
+                    <div class="subtitle">Alan Gomez, Luck Ra</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+            </li>
+            <li class="songItem">
+                <span>08</span>
+                <img src="./img/8.png" alt="">
+                <h5>
+                    Hola Perdida
+                    <div class="subtitle">Luck Ra, Maluma, KHEA</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+            </li>
+            <li class="songItem">
+                <span>09</span>
+                <img src="./img/9.png" alt="">
+                <h5>
+                    Devuelveme-Corazon
+                    <div class="subtitle">Sebastian Yatra</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+            </li>
+            <li class="songItem">
+                <span>10</span>
+                <img src="./img/10.png" alt="">
+                <h5>
+                    Melancolicos
+                    <div class="subtitle">Sebastian Yatra</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+            </li>
+
+            
+        </div>
+        </div>
+
+<!---->
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>Descubre <span></span></li>
+                    <li>Mi Biblioteca</li>
+                    <li>Radio</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music...">
+                
+                    <div class="content_serarch">
+                        <!--<div class="content_table">
+                            <table id="table">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">La Sin Sentimientos</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Por que Sera</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Ojitos Rojos</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Ya No vuelvas</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Mercho</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">La Morocha</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Shivres</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Enemy</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Pepas</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Astronout</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Todo de Ti</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Blinding Ligths</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Eazy On Me</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><a href="#">Happier</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Memories </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Señorita</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>-->
+            </div>
+        </div>
+
+                <div class="user">
+                    <img src="./img/perfil.png" alt="user" title="KDS CODDER (William Ramos)">
+                </div>
+            </nav>
+            <div class="content">
+                <h1>Alen Walker-Fade</h1>
+                <p>Eras la sombra de mi luz ¿Nos sentiste? Otro comienzo Te desvaneces<br>
+                     Temo que nuestro objetivo esté fuera de la vista ¿Quieres vernos vivos?
+                </p>
+                <div class="buttons">
+                    <button>PLAY</button>
+                    <button>FOLLOW</button>
+                </div> 
+            </div>
+            <div class="popular_song">
+               <div class="h4">
+                <h4>Popular en Canciones </h4>
+                <div class="btm_s">
+                    <i  class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                    <i  class="bi bi-arrow-right-short" id="pop_song_right"></i>
+                </div>
+               </div>
+               <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/img/11.png" alt="Shivres"> 
+                            <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                        </div>
+                        <h5>Shivres<br>
+                            <div class="subtitle">Ed Sheeran</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/img/12.png" alt="Enemy"> 
+                            <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                        </div>
+                        <h5>Enemy
+                            <br>
+                            <div class="subtitle">Image Drogons x JID</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/img/13.png" alt="Pepas"> 
+                            <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                        </div>
+                        <h5>Pepas
+                            <br>
+                            <div class="subtitle">Farruko</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/img/14.png" alt="Astronout"> 
+                            <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                        </div>
+                        <h5>Astronout
+                            <br>
+                            <div class="subtitle">Masked Wolf</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/img/15.png" alt="Todo_de_Ti"> 
+                            <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                        </div>
+                        <h5>Todo de Ti
+                            <br>
+                            <div class="subtitle">Rauw Alejandro</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/img/16.png" alt="Blinding_Ligths"> 
+                            <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                        </div>
+                        <h5>Blinding Ligths
+                            <br>
+                            <div class="subtitle">The Weelknd</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/img/17.png" alt="Eazy_On_Me"> 
+                            <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                        </div>
+                        <h5>Eazy On Me
+                            <br>
+                            <div class="subtitle">Adele</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/img/18.png" alt="Happier"> 
+                            <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                        </div>
+                        <h5>Happier
+                            <br>
+                            <div class="subtitle">Marshmello, Bastille</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/img/19.png " alt= "Memories"> 
+                            <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+                        </div>
+                        <h5>Memories
+                            <br>
+                            <div class="subtitle">Moroons</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/img/20.png" alt="Señorita"> 
+                            <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                        </div>
+                        <h5>Señorita
+                            <br>
+                            <div class="subtitle">Shows Mendes, Camila Cabello</div>
+                        </h5>
+                    </li>
+               </div>
+            </div>
+            <div class="popular_artists">
+                <div class="h4">
+                 <h4>Populares Artistas </h4>
+                 <div class="btm_s">
+                     <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                     <i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+                 </div>
+                </div>
+                <div class="item ">
+                    <li>
+                        <img src="img/21.png" alt="" title="starcraft II">
+                    </li>
+                    <li>
+                        <img src="/img/22.png" alt="" title="starcraft II">
+                    </li>
+                    <li>
+                        <img src="/img/23.png" alt="" title="starcraft II">
+                    </li>
+                    <li>
+                        <img src="/img/24.png" alt="" title="starcraft II">
+                    </li>
+                    <li>
+                        <img src="/img/25.png" alt="" title="starcraft II">
+                    </li>
+                    <li>
+                        <img src="/img/26.png" alt="" title="starcraft II">
+                    </li>
+                    <li>
+                        <img src="/img/27.png" alt="" title="starcraft II">
+                    </li>
+                    <li>
+                        <img src="/img/28.png" alt="" title="starcraft II">
+                    </li>
+                    <li>
+                        <img src="/img/29.png" alt="" title="starcraft II">
+                    </li>
+                    <li>
+                        <img src="/img/30.png" alt="" title="starcraft II">
+                    </li>
+                    <li>
+                        <img src="/img/31.png" alt="" title="starcraft II">
+                    </li>
+                    <li>
+                        <img src="/img/32.png" alt="" title="starcraft II">
+                    </li>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+
+<!---->
+        <div class="master_play">
+            <div class="wave" id="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            </div>
+            <img src="./img/1.png" alt="Alan" id="poster_master_play">
+            <h5>La Sin Sentimientos<br>
+                <div class="subtitle">Alex Pance, BIAKO</div>  
+            </h5>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:30</span>
+
+            <div class="vol">
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" min="0" max="100" id="vol">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+    <script src="./js/java.js"></script>
+
+</body>
+
+</html>
+
